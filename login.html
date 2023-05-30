@@ -1,42 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="styles.css">
-  
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = 
+    "Screenshot 2023-03-13 155458.png" 
+            type = "image/x-icon">
 </head>
-<nav class="navbar">
-            <img class="logo" src="Screenshot 2023-03-13 155458.png" alt="">
-        <li class="link-item"><a href="index.html" class="link">Home</a></li>
-    <li class="link-item"><a href="premium.html" class="link">Xstring premium</a></li>
-    <li class="link-item"><a href="support.html" class="link">Support</a></li>
-    <li class="link-item"><a href="whyus.html" class="link">About Us</a></li>
-
-      </nav>
 <body>
-    <div class="input-group">
-    <h2>Login to Xstring</h2>
-    <img src="Screenshot 2023-03-13 155458.png" class="logo" alt="">
-    <input 
-    type="text"
-    autocomplete="off"
-    placeholder="email"
-    />
-    <input
-    type="text"
-    autocomplet="off"
-    placeholder="password"
-    />
-    <button class="login-button">Login</button>
-    <a href="signup.html" class="link" >Need To Create An Account?</a>
-    <script src="login.js"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-auth.js"></script>
-   </div>
+  <h1>Login</h1>
+  <form id="login-form">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br>
+    <button type="submit">Login</button>
+  </form>
+
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+  <script src="login.js"></script>
 </body>
 </html>
