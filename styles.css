@@ -26,7 +26,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background-color: #8dd1e2;
+  background-color: black;
   color: #ffffff;
 }
 
@@ -53,7 +53,7 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #1199c2;
+  background-color: color-mix(in lch, 5%white, black);;
   padding: 2rem;
 }
 
@@ -126,7 +126,7 @@ html, body {
 
 
 .pill-container {
-  background-color: #4244c9;
+  background-color: #000000;
   border-radius: 1rem;
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -136,7 +136,7 @@ html, body {
 }
 
 .pill-container a {
-  color: #212121;
+  color: #454545;
   text-decoration: none;
   font-size: 1.2rem;
 }
