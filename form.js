@@ -1,7 +1,7 @@
 
     // Initialize Firebase
     var firebaseConfig = {
-      // Replace with your own Firebase config object
+      
       apiKey: "AIzaSyDf8WKtC3igTauCp2y7Af8NdBZn4YQty-w",
   authDomain: "messagingapp-c71e3.firebaseapp.com",
   projectId: "messagingapp-c71e3",
