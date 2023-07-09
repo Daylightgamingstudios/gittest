@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup Form</title>
+  <!-- Include Firebase SDK and your custom JavaScript code -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+  <script src="login-test.js"></script>
+</head>
+<body>
+  <h1>Signup Form</h1>
+  <form id="signup-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" placeholder="Enter your phone number" required><br>
+
+    <label for="terms">
+      <input type="checkbox" id="terms" required>
+      I agree to the terms and conditions.
+    </label><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" required><br>
+
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" placeholder="Confirm your password" required><br>
+
+    <button type="submit">Sign Up</button>
+  </form>
+</body>
+</html>

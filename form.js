@@ -19,6 +19,7 @@
     var emailField = document.getElementById('email');
     var passwordField = document.getElementById('password');
     var signupForm = document.getElementById('signup-form');
+    var termsField = document.getElementById('terms');
 
     // Add signup form submit event listener
     signupForm.addEventListener('submit', function(event) {
@@ -26,6 +27,13 @@
 
       var email = emailField.value;
       var password = passwordField.value;
+      var agreedToTerms = termsField.checked;
+  
+      // Additional validation logic
+      if (!agreedToTerms) {
+        console.error('Please agree to the terms and conditions.');
+        return;
+      }
 
       // Create a new user with email and password
       auth.createUserWithEmailAndPassword(email, password)
